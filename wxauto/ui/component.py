@@ -515,6 +515,7 @@ class WeChatImage(BaseUISubWnd):
                 menu = self.control.MenuControl(ClassName='CMenuWnd')
                 menu.MenuItemControl(Name=self._lang('复制')).Click()
                 # print('读取剪贴板数据')
+                time.sleep(0.1)
                 clipboard_data = ReadClipboardData()
                 # print('读取剪贴板数据成功')
                 # wxlog.debug(f"读取到剪贴板数据：{clipboard_data}")
